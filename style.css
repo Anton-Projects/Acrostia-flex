@@ -22,8 +22,6 @@ a {
     text-decoration: none;
     outline: none;
     color: #000;
-    border-bottom-right-radius: 0.3rem;
-    border-bottom-left-radius: 0.3rem;
 }
 
 a:focus {
@@ -55,6 +53,8 @@ a:focus {
 .site-nav a {
     padding: 1.45rem 1rem 0.5rem 1rem;
     border: 1px solid transparent;
+    border-bottom-right-radius: 0.3rem;
+    border-bottom-left-radius: 0.3rem;
     line-height: 3.33;
     color: #fff;
 }
@@ -818,6 +818,7 @@ display: block;
     .site-nav .menu li a {
         flex: 100%;
         padding: 0;margin: 0;
+	border-radius: 0;
     }
 
     .site-nav .menu-button {
