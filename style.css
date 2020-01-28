@@ -649,6 +649,25 @@ display: block;
     justify-content: space-between;
 }
 
+.contacts form button {
+	display: inline-block;
+	  border-radius: 4px;
+  box-shadow: inset 0px -4px 0 0 rgba(178, 74, 80, 0.5);
+  background-color: #df5c64;
+  /* flex: 50%; */
+  margin: 1rem auto;
+  padding: 0.5rem 5rem;
+   font-family: 'Lato', sans-serif;
+  font-size: 1.1em;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.81;
+  letter-spacing: normal;
+  color: #fff;
+  /* text-align: left; */
+}
+
 .contacts form input {
     width: 49%;
     padding: 0.3rem;
@@ -752,11 +771,11 @@ display: block;
         display: block;
         position: absolute;
         bottom: 0.5rem;
-        right: 2rem;
-        padding: 0.5rem;
+        right: 1rem;
+        padding: 0.3rem;
         border: 1px solid #fff;
         border-radius: 3px;
-        font-size: 1.5em;
+        font-size: 1em;
         font-weight: 900;
         color: #fff;
     }
