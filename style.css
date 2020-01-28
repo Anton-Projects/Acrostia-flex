@@ -22,6 +22,8 @@ a {
     text-decoration: none;
     outline: none;
     color: #000;
+    border-bottom-right-radius: 0.3rem;
+    border-bottom-left-radius: 0.3rem;
 }
 
 a:focus {
@@ -53,8 +55,6 @@ a:focus {
 .site-nav a {
     padding: 1.45rem 1rem 0.5rem 1rem;
     border: 1px solid transparent;
-    border-bottom-right-radius: 0.3rem;
-    border-bottom-left-radius: 0.3rem;
     line-height: 3.33;
     color: #fff;
 }
@@ -720,9 +720,7 @@ display: block;
     }
 
     .wrapper h2, .wrapper h3 {
-        /* flex: 100%; */
         text-align: center;
-                /* display: block; */
     }
 }
 
@@ -753,7 +751,7 @@ display: block;
     }
 
     .contacts .details .address, .contacts .details .map, .contacts form {
-        flex: 0 0 55%;
+        flex: 0 0 75%;
     }
 
     .contacts .details .address * {
@@ -818,7 +816,7 @@ display: block;
     .site-nav .menu li a {
         flex: 100%;
         padding: 0;margin: 0;
-	border-radius: 0;
+		border-radius: 0;
     }
 
     .site-nav .menu-button {
@@ -838,6 +836,10 @@ display: block;
         font-size: 1em;
         padding: 0;
     }
+	
+	.wrapper {
+		max-width: 90%;
+	}
 
     .wrapper h2 {
         font-size: 1.5em;
@@ -851,6 +853,8 @@ display: block;
 
     .card p {
         font-size: 0.9em;
+		padding-left: 0;
+		padding-right: 0;
     }
     .card, .about .card, .about .card-hover {
         flex: 0 0 60%;
@@ -873,4 +877,8 @@ display: block;
     .menu li:last-child a {
         background-color: #82c8bd;
     }
+	
+	.contacts form input {
+    width: 100%;
+	}
 }
