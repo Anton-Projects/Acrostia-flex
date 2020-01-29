@@ -107,6 +107,32 @@ a:focus {
     padding-left: 0.3rem;
 }
 
+/* slider */
+.arrows {
+   width: 2rem;
+   height: 2rem;
+   border-color: transparent;
+   border-bottom: 0.5rem solid;
+   border-left: 0.5rem solid;
+   position: absolute;
+   top: 22em;
+   margin-top: -2rem;
+   color: #fff;
+   opacity: 0.5;
+   cursor: pointer;
+}
+
+.prev {
+   transform: rotate(45deg);
+   left: 2rem;
+}
+   
+.next {
+   transform: rotate(-135deg);
+   right: 2rem;
+}
+/* slider-end */
+
 .dots {
     display: inline-flex;
     flex: 0 0 80%;
@@ -692,6 +718,8 @@ display: block;
 }
 
 
+/* MEDIA QUERIES */
+
 @media (min-width: 2400px) {
 
     html {
@@ -737,6 +765,10 @@ display: block;
     .card p {
         font-size: 1.1em;
     }
+	
+   .arrows {
+        top: 20em;
+     }
 }
 
 @media (max-width: 850px) {
@@ -757,6 +789,10 @@ display: block;
     .contacts .details .address * {
         text-align: center;
     }
+	
+    .arrows {
+        top: 25em;
+     }
 
 }
 
@@ -831,14 +867,30 @@ display: block;
         justify-content: center;
         align-items: center;
     }
-    
-    .home h1 {
-        font-size: 1em;
-        padding: 0;
-    }
 	
-	.wrapper {
-		max-width: 90%;
+	.home h1 {
+        font-size: 1.2em;
+        padding: 0.3em;
+    }
+
+       .arrows {
+        width: 0.9rem;
+        height: 0.9rem;
+        top: 19em;
+        border-bottom: 0.2rem solid;
+        border-left: 0.2rem solid;
+     }
+
+     .prev {
+        left: 1rem;
+     }
+        
+     .next {
+        right: 1rem;
+     }
+	
+     .wrapper {
+	max-width: 90%;
 	}
 
     .wrapper h2 {
@@ -853,8 +905,8 @@ display: block;
 
     .card p {
         font-size: 0.9em;
-		padding-left: 0;
-		padding-right: 0;
+	padding-left: 0;
+	padding-right: 0;
     }
     .card, .about .card, .about .card-hover {
         flex: 0 0 60%;
@@ -878,7 +930,7 @@ display: block;
         background-color: #82c8bd;
     }
 	
-	.contacts form input {
-    width: 100%;
+    .contacts form input {
+   	width: 100%;
 	}
 }
